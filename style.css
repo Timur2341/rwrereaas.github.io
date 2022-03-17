@@ -1,0 +1,505 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Merriweather', serif;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: rgb(90, 90, 228);
+    border-radius: 5rem;
+}
+.btn {
+    font-size: 2rem;
+    padding: 2rem 6rem;
+    border-radius: 5rem;
+    
+    border: 1px ;
+    background: rgb(90, 90, 228);
+    cursor: pointer;
+}
+.sticky {
+    background: red;
+}
+.header {
+    position: fixed;
+    left: 0; top: 0;
+    padding: 5rem 9%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: 0.3s all;
+}
+.header.sticky {
+    padding: 33px 100px;
+    background: rgb(90, 90, 228);
+    z-index: 1000;
+}
+.header .navbar a{
+    margin: 0 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: 0.3s all;
+}
+.header .navbar a:hover {
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+.header .logo {
+    position: fixed;
+    left: 6rem;
+    color: #fff;
+    font-size: 1.7rem;
+}
+.header .space {
+    border-left: 1px solid #fff;
+    font-size: 26px;
+    
+}
+.header .color {
+    background: rgb(90, 90, 228);
+    padding: 2rem 5rem;
+    border-radius: 25px;
+}
+.products .content {
+    padding: 1rem 5rem;
+    background: white;
+}
+.products {
+    padding: 25rem;
+    margin-left: -26rem;
+  font-size: 1.4rem;
+  background: rgb(7, 7, 44);
+   
+}
+.products .content {
+    background: rgb(7, 7, 44);
+    color: #fff;
+}
+.products h3 .white {
+    background: rgb(177, 96, 96);
+    margin-left: 2rem;
+    border-radius: 5rem;
+    padding: 1rem 2rem;
+    display: inline-block;
+    width: 11rem;
+    font-size: 1.3rem;
+   
+}
+.text {
+    padding: 4rem 0;
+    margin-left:3rem;
+    background: rgb(7, 7, 44);
+}
+.text h3 {
+    font-size: 6rem;
+    color: #fff;
+}
+.text p {
+    padding: 4rem 0;
+    font-size: 2rem;
+    color: #fff;
+}
+.products .image {
+    margin-left: 110rem;
+    margin-top: 31rem;
+    transform: translateY(-85rem);
+    background: rgb(7, 7, 44);
+    
+}
+.products .image img {
+    cursor: pointer;
+}
+.products .box-container {
+    display: flex;
+    text-align: center;
+    padding: 6rem 0;
+    margin: 0 auto;
+  
+    margin-top: 22rem ;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.products .box-container .box {
+    margin-left: 30rem;
+ }
+ #menu-btn {
+     font-size: 3rem;
+     color: white;
+     cursor: pointer;
+     display: none;
+ }
+ .products .box-container .box .icons i{
+     margin-right: 33rem;
+     transform: translateY(5rem);
+     font-size: 4rem;
+     background: rgb(37, 35, 148);
+     border-radius: 50%;
+     width: 7rem;
+     height: 7rem;
+     line-height: 7rem;
+    cursor: pointer;
+ }
+ .products .content1 {
+     margin-top: 27rem;
+     display: flex;
+     align-items: center;
+     
+ }
+ .products .content1 h3 {
+    margin-left: 29rem;
+    color: white;
+    font-size: 6rem;
+    transform: translateY(-17rem);
+ }
+ .products .content1 img {
+     margin-left: 5rem;
+     cursor: pointer;
+ }
+ .content1 p {
+     color: #fff;
+     transform: translateY(55rem);
+     transform: translateX(-16rem);
+     margin-left: -59rem;
+     font-size: 2rem;
+ }
+
+.features .content {
+    text-align: center;
+    background: rgb(7, 7, 44);
+}
+.features .content h3 {
+    font-size: 4rem;
+    color: white;
+    padding: 2rem 0;
+}
+.features .content p {
+    font-size: 2rem;
+    color: white;
+    padding: 2rem 0;
+}
+.features .calculate {
+   display: flex;
+
+   margin-top: 14rem;
+   
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+ 
+
+}
+.features .calculate input {
+    color: black;
+    background: white;
+    padding: 1rem 5rem;
+    margin-top: 4rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.features .calculate .space {
+    display: inline-block;
+    width: 12rem;
+}
+.features .calculate .fas  {
+    padding: 20rem 10rem;
+    margin-bottom: 4rem;
+    border-radius: 5rem;
+    display: flex;
+    background: #fff;
+}
+.features .calculate .fas a {
+    margin-top: 4rem;
+}
+
+.calculate  .fab h3 {
+    font-size: 2rem;
+    color: rgb(37, 35, 148);
+    transform: translateY(13rem);
+  margin-left: -151rem;
+}
+.calculate  .fab p {
+    color: rgb(37, 35, 148);
+    transform: translateY(13rem);
+    margin-left: -151rem;
+}
+.calculate  .fab p .color {
+    color: blue;
+}
+.about .title {
+    text-align: center;
+   margin-top: 10rem;
+}
+
+.about .title h3 {
+    font-size: 6rem;
+   
+}
+.about .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.about .box-container .box {
+    margin-top: 10rem;
+   margin-left: 30rem;
+   transform: translateX(-12rem);
+ 
+}
+.about .box-container .box .icons {
+    font-size: 10rem;
+    padding: 2rem 0;
+    transform: translateX(5rem);
+    cursor: pointer;
+    font-size: 10rem;
+}
+.about .box-container .boxx .arrr {
+    font-size: 3rem;
+    transform: translateX(3rem);
+}
+
+.about .box-container .box h3 {
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+.about .box-container .box p {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+
+.about .box-container .box .arrow {
+    font-size: 5rem;
+   transform: translateX(10rem);
+   margin-top: 5rem;
+    cursor: pointer;
+    background: #fff;
+   
+}
+.about .box-container .box .ethereum {
+    color: white;
+    width: 10rem;
+    height: 10rem;
+    line-height: 7rem;
+    text-align: center;
+    border-radius: 50%;
+    background: blue;
+    font-size: 6rem;
+}
+.about .box-container .box .litecoin {
+    color: white;
+    width: 10rem;
+    height: 10rem;
+    line-height: 7rem;
+    text-align: center;
+    border-radius: 50%;
+    background: green;
+    font-size: 6rem;
+}
+
+.about .box-container .boxx .btn:hover {
+    background: rgb(0, 153, 255);
+}
+
+
+.about .box-container .boxx {
+background: rgb(37, 35, 148);
+transform: translateX(-15rem);
+margin-top: 10rem;
+margin-left: 30rem;
+border-radius: 5rem;
+padding: 5rem 5rem;
+
+}
+.about .box-container .boxx h3 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+.about .box-container .boxx p {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+.about .box-container .boxx .icons {
+    text-align: center;
+    font-size: 10rem;
+    padding: 2rem 0;
+    transform: translateX(8rem);
+    cursor: pointer;
+    font-size: 10rem;
+    color: rgb(214, 158, 52);
+}
+
+.about .content2 h3 {
+    text-align: center;
+    margin-top: 25rem;
+    font-size: 4rem;
+    color: white;
+}
+.about .content2 {
+    background: rgb(37, 35, 148);
+    padding: 2rem 2rem;
+    margin-top: 25rem;
+}
+.about .content2 .box h3 {
+   margin-left: -142rem;
+}
+.about .content2 .box p {
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 3rem;
+    margin-left: 10rem;
+}
+.about .content2 .box .btn {
+    margin-left: 10rem;
+    margin-top: 3rem;
+}
+.image  {
+    z-index: 1000;
+    margin-left: 104rem;
+    transform: translateY(-25rem);
+}
+.image1 {
+    transform: translateY(-25rem);
+   margin-left: 5rem;
+}
+.image1 .btc {
+    transform: translateX(-3.3rem);
+     margin-bottom: 1rem;
+}
+.image .vector8 {
+    transform: translateY(-20rem);
+    margin-left: 5rem;
+}
+.image .vector7 {
+    transform: translateY(-34rem);
+    margin-left: 5rem;
+}
+.image h6  {
+    color: rgb(46, 211, 46);
+   font-size: 2rem;
+   transform: translateY(-50rem);
+    margin-left: 45rem;
+}
+.image .rectangle37 {
+    transform: translateY(-35rem);
+    margin-left: 10rem;
+}
+.image .b1 h3 {
+    color: #fff;
+    font-size: 2rem;
+    transform: translateY(-75rem);
+    margin-right: -95rem;
+}
+.image .b1 .b11 {
+    transform: translateY(-98rem);
+    margin-right: -95rem;
+}
+.image .b1 .b11 span {
+    color: red;
+    transform: translateX(1rem);
+}
+.contact {
+    background: rgb(37, 35, 148);
+    margin-top: -85rem;
+}
+.contact .box {
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    background: rgb(87, 115, 238);
+    width: 132vh;
+    height: 25vh;
+    border-radius: 3rem;
+}
+.contact .box .content {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+.contact .box .content h3 {
+    font-size: 3rem;
+    color: #fff;
+    transform: translateY(6rem);
+   
+}
+.contact .box .content p {
+    font-size: 2rem;
+    color: #fff;
+    transform: translateY(8rem);
+}
+.contact input {
+    border: none;
+    padding: 2rem;
+    width: 33rem;
+    margin-left: 5rem;
+    margin-bottom: 14rem;
+    transform: translateY(10rem);
+}
+.contact .btn {
+margin-left: 90rem;
+transform: translateY(-10rem);
+
+}
+.footer {
+    background: #24262b;
+    padding: 70px 0;
+    margin-top: 25rem;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container {
+    max-width: 1170px;
+   
+    margin: auto;
+}
+ul {
+    list-style: none;
+}
+.footer-col {
+width: 25%;
+padding: 0 15px;
+}
+.footer-col h4 {
+    font-size: 15px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.footer-col ul li a{
+font-size: 16px;
+color: #fff;
+ display: block;
+ padding: 2rem 0;
+}
+.footer-col ul li a:hover {
+    color: #fff;
+}
+.footer-col i {
+    font-size: 2rem;
+    color: rgb(0, 255, 98);
+    margin: 0 2rem;
+    cursor: pointer;
+}
